@@ -24,7 +24,7 @@ CMinus语言的详细定义：**C-语言的详细定义.pdf**
 
 CMinus语言词法分析：DFA.png
 
-详细开发文档：DevelopingDocument.md(包括编译器的使用说明)
+详细开发文档：DevelopingDocument.md
 
 ## src文件夹
 
@@ -64,3 +64,14 @@ CMinus语言词法分析：DFA.png
 
 **TestFile文件夹**包括了CMinus语言的测试样例
 
+# How to run
+
+cd Code  进入源码所在文件夹
+
+make  编译
+
+cd ../Release/  进入编译器可执行程序文件夹
+
+./CmCompiler   ../TestFile/AllTest.cm     使用Cminus编译器编译CMinus测试文件，生成测试文件的可执行程序
+
+./final   运行
