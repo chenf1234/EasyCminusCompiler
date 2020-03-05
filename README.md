@@ -24,7 +24,7 @@ CMinus语言的详细定义：**C-语言的详细定义.pdf**
 
 CMinus语言词法分析：DFA.png
 
-详细开发文档：DevelopingDocument.md
+详细开发文档：DevelopingDocument.md(包括编译器的使用说明)
 
 ## src文件夹
 
