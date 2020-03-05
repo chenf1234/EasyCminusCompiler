@@ -1,0 +1,19 @@
+int main(void){
+    int a;
+    int b;
+    a=1;
+    b=0;
+    if(a>b){
+        int i;
+        i=0;
+        if(i>0){
+            output(a);
+        }
+        else{
+            output(b);
+        }
+
+    }
+    output(3);
+    return 0;
+}

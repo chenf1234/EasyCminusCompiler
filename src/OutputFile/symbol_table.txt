@@ -1,0 +1,30 @@
+Function:
+identifier     scope          size           type           location       linepoc        
+-----------------------------------------------------------------------------------
+
+Function: CallFunction
+a              1              0              int_array      1              4              
+ans            2              4              int            4              6              
+b              1              0              int            2              4              
+j              2              4              int            0              5              
+next           2              4              int            8              7              
+
+Function: GLOBALS
+CallFunction   0              0              void           0              4              
+input          0              0              int            0              0              
+main           0              0              int            0              13             
+output         0              0              void           0              0              
+vi             0              0              int            0              1              
+
+Function: main
+a              2              12             int_array      0              14             
+b              2              4              int            12             15             
+
+Function: vi
+
+function stack size
+Function CallFunction --- stack size: 12
+Function input --- stack size: 0
+Function main --- stack size: 16
+Function output --- stack size: 0
+Function vi --- stack size: 0

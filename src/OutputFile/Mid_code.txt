@@ -1,0 +1,142 @@
+function vi middle code
+stack size : 0 , max_param_size : 12
+Function  vi : 
+	is_into_stack : 0 , isleft : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 9 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendvi , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label Lendvi : 
+	is_into_stack : 0 , isleft : 0
+
+function CallFunction middle code
+stack size : 12 , max_param_size : 12
+Function  CallFunction : 
+	is_into_stack : 0 , isleft : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : vi , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : next , is_num : 0 , is_global : 1 , is_array : 0 , loc : 8 , array_loc : 0
+	Array Element
+	is_into_stack : 1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	TIMES
+	is_into_stack : 1 , isleft : 1
+		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
+		id : tmp1 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 1 , array_loc : 0
+	Array Element
+	is_into_stack : 1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	ADD
+	is_into_stack : 0 , isleft : 0
+		id : tmp3 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 3 , array_loc : 0
+		id : tmp4 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 4 , array_loc : 0
+	OVER
+	is_into_stack : 1 , isleft : 1
+		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 2 , array_loc : 0
+		id : tmp5 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 5 , array_loc : 0
+	Array Element
+	is_into_stack : -1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	MINUS
+	is_into_stack : 0 , isleft : 0
+		id : tmp7 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 7 , array_loc : 0
+		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	ADD
+	is_into_stack : 1 , isleft : 1
+		id : tmp6 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 6 , array_loc : 0
+		id : tmp8 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 8 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : next , is_num : 0 , is_global : 1 , is_array : 0 , loc : 8 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : -1 , array_loc : 2
+	ADD
+	is_into_stack : 0 , isleft : 0
+		id : tmp9 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 9 , array_loc : 0
+		id : tmp10 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 10 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp11 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 11 , array_loc : 0
+		id : ans , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : ans , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+Label LendCallFunction : 
+	is_into_stack : 0 , isleft : 0
+
+function main middle code
+stack size : 16 , max_param_size : 12
+Function  main : 
+	is_into_stack : 0 , isleft : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 5 , array_loc : 0
+		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+		id : tmp1 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 1 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 2 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC0 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : __isoc99_scanf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 12 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 12 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : CallFunction , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+Label Lendmain : 
+	is_into_stack : 0 , isleft : 0
+

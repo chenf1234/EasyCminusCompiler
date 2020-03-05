@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "map": "cpp",
+        "iomanip": "cpp",
+        "ostream": "cpp",
+        "optional": "cpp",
+        "istream": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
+}

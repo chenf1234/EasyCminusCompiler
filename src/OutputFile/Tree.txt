@@ -1,0 +1,8 @@
+
+>>> Syntax error at line 2 : unexpected token -> =
+
+>>> Syntax error at line 2 : unexpected token -> 
+
+>>> Syntax error at line 2 : unexpected token -> 
+
+Code ends before file

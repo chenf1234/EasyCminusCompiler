@@ -1,0 +1,113 @@
+int as;
+
+/**********测试调用函数中嵌套if语句***************/
+int fuction(int t){
+    int a;
+    int b;
+    a=1;
+    b=a;
+    if(b)   return b;
+    else return as;   
+}
+
+/**************测试输出数组元素乘法运算以及返回连乘运算结果**************/
+int mul(int a,int b,int c,int d[]){
+    output(d[2]*d[3]);
+    return a*b*c*d[3];
+}
+
+/*****************测试数组元素作为参数******************/
+int v(int a[]){
+    
+    return a[0];
+}
+int a[12];
+
+/*************测试嵌套函数调用***************/
+int vi(int a[],int b,int c,int d){
+    
+    return v(a);
+}
+int c;
+int d;
+int ss;
+int main(void){
+    /***calculate*****/
+    int a[123];
+    int b;
+    int d;
+    ss=5;
+    c=3;
+    a[1]=2;
+    /********输入输出********/
+    b=input();
+    output(b);
+
+    d=4;
+    as=v(a);
+    d=d/as;
+    d=d/2;
+    d=d*4;
+    v(a);
+    output(d);
+
+    /********while循环测试**********/
+    while(c){
+        int i;
+        int a;
+        int s;
+        int ss;
+        int b;
+        int op[2];
+        a=3;
+        b=4;
+        i=2;
+        ss=i;
+        output(1);
+
+        /*******嵌套while循环*******/
+        while(i>=0){
+            output(i);
+            i=i-1; 
+        }
+        output(2);
+
+        ss=a*b*d;
+        output(ss);
+        s=(a+b)*c/d-c;
+        output(s);
+        c=0;
+        if(b<0) return 1; 
+    }
+
+    output(b);
+
+    /********if语句测试*******/
+    if(b){
+        int b[12];
+        b[1]=0;
+        output(b[1]);
+    }
+
+    a[1]=b;
+    a[2]=ss;
+    output(a[2]);
+
+    vi(a,c,1<=2,a[2]);
+    a[3]=vi(a,1,2,3);
+    output(a[3]);
+
+    as=fuction(1*2+3-4);
+    output(as);
+
+    as=mul(ss,d,as,a);
+    output(as);
+
+    /*********测试复杂算数运算**********/
+    output((a[1]+b*4)+(a[1]+4)/(a[2]*a[3]));
+    return 0;
+    
+    /**sd
+    sd
+    **/
+}

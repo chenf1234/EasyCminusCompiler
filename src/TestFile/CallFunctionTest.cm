@@ -1,0 +1,21 @@
+int vi(void){
+    return 9;
+}
+void CallFunction(int a[],int b){
+    int j;
+    int ans;
+    int next;
+    j=2;
+    next=vi();
+    ans=a[0]*a[1]/(a[2]+j*3)+(a[0]-j)+next*b;
+    output(ans);
+}
+int main(void){
+    int a[3];
+    int b;
+    a[0]=5;
+    a[1]=4;
+    a[2]=1;
+    b=input();
+    CallFunction(a,b);
+}
