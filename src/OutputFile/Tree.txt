@@ -1,8 +1,356 @@
-
->>> Syntax error at line 2 : unexpected token -> =
-
->>> Syntax error at line 2 : unexpected token -> 
-
->>> Syntax error at line 2 : unexpected token -> 
-
-Code ends before file
+var-declaration:
+    int
+    ID:as
+fun-declaration:
+    int
+    ID:fuction
+    param:
+        int            ID:t
+compound-stmt
+    var-declaration:
+        int
+        ID:a
+    var-declaration:
+        int
+        ID:b
+    assign to=
+        ID:a
+        val:1
+    assign to=
+        ID:b
+        ID:a
+    if
+        ID:b
+        return
+            ID:b
+        return
+            ID:as
+fun-declaration:
+    int
+    ID:mul
+    param:
+        int            ID:a
+    param:
+        int            ID:b
+    param:
+        int            ID:c
+    param:
+        int            array               ID:d                SIZE:unknown
+compound-stmt
+    call
+        ID:output
+        arg-list
+            op:*
+                array-element
+                    ID:d                        SIZE:2
+                array-element
+                    ID:d                        SIZE:3
+    return
+        op:*
+            op:*
+                op:*
+                    ID:a
+                    ID:b
+                ID:c
+            array-element
+                ID:d                    SIZE:3
+fun-declaration:
+    int
+    ID:v
+    param:
+        int            array               ID:a                SIZE:unknown
+compound-stmt
+    return
+        array-element
+            ID:a                SIZE:0
+var-declaration:
+    int
+    array           ID:a            SIZE:12
+fun-declaration:
+    int
+    ID:vi
+    param:
+        int            array               ID:a                SIZE:unknown
+    param:
+        int            ID:b
+    param:
+        int            ID:c
+    param:
+        int            ID:d
+compound-stmt
+    return
+        call
+            ID:v
+            arg-list
+                ID:a
+var-declaration:
+    int
+    ID:c
+var-declaration:
+    int
+    ID:d
+var-declaration:
+    int
+    ID:ss
+fun-declaration:
+    int
+    ID:main
+    void
+compound-stmt
+    var-declaration:
+        int
+        array               ID:a                SIZE:123
+    var-declaration:
+        int
+        ID:b
+    var-declaration:
+        int
+        ID:d
+    assign to=
+        ID:ss
+        val:5
+    assign to=
+        ID:c
+        val:3
+    assign to=
+        array-element
+            ID:a                SIZE:1
+        val:2
+    assign to=
+        ID:b
+        call
+            ID:input
+    call
+        ID:output
+        arg-list
+            ID:b
+    assign to=
+        ID:d
+        val:4
+    assign to=
+        ID:as
+        call
+            ID:v
+            arg-list
+                ID:a
+    assign to=
+        ID:d
+        op:/
+            ID:d
+            ID:as
+    assign to=
+        ID:d
+        op:/
+            ID:d
+            val:2
+    assign to=
+        ID:d
+        op:*
+            ID:d
+            val:4
+    call
+        ID:v
+        arg-list
+            ID:a
+    call
+        ID:output
+        arg-list
+            ID:d
+    while
+        ID:c
+        compound-stmt
+            var-declaration:
+                int
+                ID:i
+            var-declaration:
+                int
+                ID:a
+            var-declaration:
+                int
+                ID:s
+            var-declaration:
+                int
+                ID:ss
+            var-declaration:
+                int
+                ID:b
+            var-declaration:
+                int
+                array                       ID:op                        SIZE:2
+            assign to=
+                ID:a
+                val:3
+            assign to=
+                ID:b
+                val:4
+            assign to=
+                ID:i
+                val:2
+            assign to=
+                ID:ss
+                ID:i
+            call
+                ID:output
+                arg-list
+                    val:1
+            while
+                op:>=
+                    ID:i
+                    val:0
+                compound-stmt
+                    call
+                        ID:output
+                        arg-list
+                            ID:i
+                    assign to=
+                        ID:i
+                        op:-
+                            ID:i
+                            val:1
+            call
+                ID:output
+                arg-list
+                    val:2
+            assign to=
+                ID:ss
+                op:*
+                    op:*
+                        ID:a
+                        ID:b
+                    ID:d
+            call
+                ID:output
+                arg-list
+                    ID:ss
+            assign to=
+                ID:s
+                op:-
+                    op:/
+                        op:*
+                            op:+
+                                ID:a
+                                ID:b
+                            ID:c
+                        ID:d
+                    ID:c
+            call
+                ID:output
+                arg-list
+                    ID:s
+            assign to=
+                ID:c
+                val:0
+            if
+                op:<
+                    ID:b
+                    val:0
+                return
+                    val:1
+    call
+        ID:output
+        arg-list
+            ID:b
+    if
+        ID:b
+        compound-stmt
+            var-declaration:
+                int
+                array                       ID:b                        SIZE:12
+            assign to=
+                array-element
+                    ID:b                        SIZE:1
+                val:0
+            call
+                ID:output
+                arg-list
+                    array-element
+                        ID:b                            SIZE:1
+    assign to=
+        array-element
+            ID:a                SIZE:1
+        ID:b
+    assign to=
+        array-element
+            ID:a                SIZE:2
+        ID:ss
+    call
+        ID:output
+        arg-list
+            array-element
+                ID:a                    SIZE:2
+    call
+        ID:vi
+        arg-list
+            ID:a
+            ID:c
+            op:<=
+                val:1
+                val:2
+            array-element
+                ID:a                    SIZE:2
+    assign to=
+        array-element
+            ID:a                SIZE:3
+        call
+            ID:vi
+            arg-list
+                ID:a
+                val:1
+                val:2
+                val:3
+    call
+        ID:output
+        arg-list
+            array-element
+                ID:a                    SIZE:3
+    assign to=
+        ID:as
+        call
+            ID:fuction
+            arg-list
+                op:-
+                    op:+
+                        op:*
+                            val:1
+                            val:2
+                        val:3
+                    val:4
+    call
+        ID:output
+        arg-list
+            ID:as
+    assign to=
+        ID:as
+        call
+            ID:mul
+            arg-list
+                ID:ss
+                ID:d
+                ID:as
+                ID:a
+    call
+        ID:output
+        arg-list
+            ID:as
+    call
+        ID:output
+        arg-list
+            op:+
+                op:+
+                    array-element
+                        ID:a                            SIZE:1
+                    op:*
+                        ID:b
+                        val:4
+                op:/
+                    op:+
+                        array-element
+                            ID:a                                SIZE:1
+                        val:4
+                    op:*
+                        array-element
+                            ID:a                                SIZE:2
+                        array-element
+                            ID:a                                SIZE:3
+    return
+        val:0

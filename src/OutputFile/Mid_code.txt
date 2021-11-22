@@ -1,123 +1,177 @@
-function vi middle code
-stack size : 0 , max_param_size : 12
-Function  vi : 
+function GLOBALS middle code
+stack size : 0 , max_param_size : 4
+Global var as : 
+	is_into_stack : 0 , isleft : 0
+
+function fuction middle code
+stack size : 8 , max_param_size : 12
+Function  fuction : 
+	is_into_stack : 0 , isleft : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	IF
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+		id : L0 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L1 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L0 : 
 	is_into_stack : 0 , isleft : 0
 	RETURN
 	is_into_stack : 0 , isleft : 0
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 9 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
 	GOTO 
 	is_into_stack : 0 , isleft : 0
-		id : Lendvi , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
-Label Lendvi : 
+		id : Lendfuction , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L2 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L1 : 
+	is_into_stack : 0 , isleft : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendfuction , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L2 : 
+	is_into_stack : 0 , isleft : 0
+Label Lendfuction : 
 	is_into_stack : 0 , isleft : 0
 
-function CallFunction middle code
-stack size : 12 , max_param_size : 12
-Function  CallFunction : 
+function mul middle code
+stack size : 0 , max_param_size : 12
+Function  mul : 
 	is_into_stack : 0 , isleft : 0
-	Assign to
-	is_into_stack : 0 , isleft : 0
+	Array Element
+	is_into_stack : 1 , isleft : 1
+		id : d , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 4
 		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
-		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
-	CALL
-	is_into_stack : 0 , isleft : 0
-		id : vi , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
-	Assign to
-	is_into_stack : 0 , isleft : 0
-		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
-		id : next , is_num : 0 , is_global : 1 , is_array : 0 , loc : 8 , array_loc : 0
-	Array Element
-	is_into_stack : 1 , isleft : 1
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
 	Array Element
 	is_into_stack : 0 , isleft : 0
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 4
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
 	TIMES
-	is_into_stack : 1 , isleft : 1
+	is_into_stack : 0 , isleft : 0
 		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
 		id : tmp1 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 1 , array_loc : 0
-	Array Element
-	is_into_stack : 1 , isleft : 1
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
-	TIMES
-	is_into_stack : 0 , isleft : 0
-		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
-	ADD
-	is_into_stack : 0 , isleft : 0
-		id : tmp3 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 3 , array_loc : 0
-		id : tmp4 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 4 , array_loc : 0
-	OVER
-	is_into_stack : 1 , isleft : 1
-		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 2 , array_loc : 0
-		id : tmp5 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 5 , array_loc : 0
-	Array Element
-	is_into_stack : -1 , isleft : 1
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
-	MINUS
-	is_into_stack : 0 , isleft : 0
-		id : tmp7 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 7 , array_loc : 0
-		id : j , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
-	ADD
-	is_into_stack : 1 , isleft : 1
-		id : tmp6 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 6 , array_loc : 0
-		id : tmp8 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 8 , array_loc : 0
-	TIMES
-	is_into_stack : 0 , isleft : 0
-		id : next , is_num : 0 , is_global : 1 , is_array : 0 , loc : 8 , array_loc : 0
-		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : -1 , array_loc : 2
-	ADD
-	is_into_stack : 0 , isleft : 0
-		id : tmp9 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 9 , array_loc : 0
-		id : tmp10 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 10 , array_loc : 0
-	Assign to
-	is_into_stack : 0 , isleft : 0
-		id : tmp11 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 11 , array_loc : 0
-		id : ans , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
 	PUTPARAM     position:2
 	is_into_stack : 0 , isleft : 0
-		id : ans , is_num : 0 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 2 , array_loc : 0
 	PUTPARAM     position:1
 	is_into_stack : 0 , isleft : 0
 		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
 	CALL
 	is_into_stack : 0 , isleft : 0
 		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
-Label LendCallFunction : 
+	TIMES
+	is_into_stack : -1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : -1 , array_loc : 1
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : -1 , array_loc : 2
+	TIMES
+	is_into_stack : 1 , isleft : 1
+		id : tmp3 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 3 , array_loc : 0
+		id : c , is_num : 0 , is_global : 1 , is_array : 0 , loc : -1 , array_loc : 3
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 4
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : tmp4 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 4 , array_loc : 0
+		id : tmp5 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 5 , array_loc : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : tmp6 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 6 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendmul , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label Lendmul : 
+	is_into_stack : 0 , isleft : 0
+
+function v middle code
+stack size : 0 , max_param_size : 12
+Function  v : 
+	is_into_stack : 0 , isleft : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendv , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label Lendv : 
+	is_into_stack : 0 , isleft : 0
+
+function GLOBALS middle code
+stack size : 0 , max_param_size : 4
+Global var a : 
+	is_into_stack : 0 , isleft : 0
+
+function vi middle code
+stack size : 0 , max_param_size : 12
+Function  vi : 
+	is_into_stack : 0 , isleft : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : -1 , array_loc : 1
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : v , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendvi , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label Lendvi : 
+	is_into_stack : 0 , isleft : 0
+
+function GLOBALS middle code
+stack size : 0 , max_param_size : 4
+Global var c : 
+	is_into_stack : 0 , isleft : 0
+
+function GLOBALS middle code
+stack size : 0 , max_param_size : 4
+Global var d : 
+	is_into_stack : 0 , isleft : 0
+
+function GLOBALS middle code
+stack size : 0 , max_param_size : 4
+Global var ss : 
 	is_into_stack : 0 , isleft : 0
 
 function main middle code
-stack size : 16 , max_param_size : 12
+stack size : 576 , max_param_size : 16
 Function  main : 
 	is_into_stack : 0 , isleft : 0
-	Array Element
-	is_into_stack : 0 , isleft : 1
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
 	Assign to
 	is_into_stack : 0 , isleft : 0
 		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 5 , array_loc : 0
-		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
+		id : ss , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
 	Array Element
 	is_into_stack : 0 , isleft : 1
 		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
 		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
 	Assign to
 	is_into_stack : 0 , isleft : 0
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
-		id : tmp1 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 1 , array_loc : 0
-	Array Element
-	is_into_stack : 0 , isleft : 1
-		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
 		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
-	Assign to
-	is_into_stack : 0 , isleft : 0
-		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
-		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 2 , array_loc : 0
+		id : tmp0 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 0 , array_loc : 0
 	PUTPARAM     position:1
 	is_into_stack : 0 , isleft : 0
 		id : $.LC0 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
@@ -127,16 +181,458 @@ Function  main :
 	Assign to
 	is_into_stack : 0 , isleft : 0
 		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
-		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 12 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
 	PUTPARAM     position:2
 	is_into_stack : 0 , isleft : 0
-		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 12 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
 	PUTPARAM     position:1
 	is_into_stack : 0 , isleft : 0
 		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
 	CALL
 	is_into_stack : 0 , isleft : 0
-		id : CallFunction , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+		id : v , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	OVER
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp1 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 1 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	OVER
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp2 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 2 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp3 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 3 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : v , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+Label L3 : 
+	is_into_stack : 0 , isleft : 0
+	IF
+	is_into_stack : 0 , isleft : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+		id : L4 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L5 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L4 : 
+	is_into_stack : 0 , isleft : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : 504 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 516 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+		id : ss , is_num : 0 , is_global : 1 , is_array : 0 , loc : 512 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+Label L6 : 
+	is_into_stack : 0 , isleft : 0
+	>=
+	is_into_stack : 0 , isleft : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	IF
+	is_into_stack : 0 , isleft : 0
+		id : tmp4 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 4 , array_loc : 0
+		id : L7 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L8 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L7 : 
+	is_into_stack : 0 , isleft : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	MINUS
+	is_into_stack : 0 , isleft : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp5 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 5 , array_loc : 0
+		id : i , is_num : 0 , is_global : 1 , is_array : 0 , loc : 500 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L6 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L8 : 
+	is_into_stack : 0 , isleft : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	TIMES
+	is_into_stack : -1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : 504 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 516 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : tmp6 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 6 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp7 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 7 , array_loc : 0
+		id : ss , is_num : 0 , is_global : 1 , is_array : 0 , loc : 512 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : ss , is_num : 0 , is_global : 1 , is_array : 0 , loc : 512 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	ADD
+	is_into_stack : -1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 0 , loc : 504 , array_loc : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 516 , array_loc : 0
+	TIMES
+	is_into_stack : -1 , isleft : 1
+		id : tmp8 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 8 , array_loc : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	OVER
+	is_into_stack : -1 , isleft : 1
+		id : tmp9 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 9 , array_loc : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	MINUS
+	is_into_stack : 0 , isleft : 0
+		id : tmp10 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 10 , array_loc : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : tmp11 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 11 , array_loc : 0
+		id : s , is_num : 0 , is_global : 1 , is_array : 0 , loc : 508 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : s , is_num : 0 , is_global : 1 , is_array : 0 , loc : 508 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	<
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 516 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	IF
+	is_into_stack : 0 , isleft : 0
+		id : tmp12 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 12 , array_loc : 0
+		id : L9 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L10 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L9 : 
+	is_into_stack : 0 , isleft : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendmain , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L10 : 
+	is_into_stack : 0 , isleft : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L3 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L5 : 
+	is_into_stack : 0 , isleft : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	IF
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
+		id : L11 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : L12 , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+Label L11 : 
+	is_into_stack : 0 , isleft : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : b , is_num : 0 , is_global : 1 , is_array : 1 , loc : 528 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+		id : tmp13 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 13 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 1 , loc : 528 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : tmp14 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 14 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+Label L12 : 
+	is_into_stack : 0 , isleft : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
+		id : tmp15 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 15 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : ss , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+		id : tmp16 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 16 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : tmp17 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 17 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	PUTPARAM     position:4
+	is_into_stack : 0 , isleft : 0
+		id : tmp18 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 18 , array_loc : 0
+	PUTPARAM     position:3
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : c , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : vi , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:4
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	PUTPARAM     position:3
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : vi , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : tmp19 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 19 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : tmp20 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 20 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : fuction , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:4
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+	PUTPARAM     position:3
+	is_into_stack : 0 , isleft : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : d , is_num : 0 , is_global : 1 , is_array : 0 , loc : 496 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : ss , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : mul , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Assign to
+	is_into_stack : 0 , isleft : 0
+		id : Call_function , is_num : 0 , is_global : 1 , is_array : 0 , loc : -2 , array_loc : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : as , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	Array Element
+	is_into_stack : 1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : b , is_num : 0 , is_global : 1 , is_array : 0 , loc : 492 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	ADD
+	is_into_stack : 1 , isleft : 1
+		id : tmp21 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 21 , array_loc : 0
+		id : tmp22 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 22 , array_loc : 0
+	Array Element
+	is_into_stack : -1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 1 , array_loc : 0
+	ADD
+	is_into_stack : 1 , isleft : 1
+		id : tmp24 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 24 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 4 , array_loc : 0
+	Array Element
+	is_into_stack : 1 , isleft : 1
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 2 , array_loc : 0
+	Array Element
+	is_into_stack : 0 , isleft : 0
+		id : a , is_num : 0 , is_global : 1 , is_array : 1 , loc : 0 , array_loc : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 3 , array_loc : 0
+	TIMES
+	is_into_stack : 0 , isleft : 0
+		id : tmp26 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 26 , array_loc : 0
+		id : tmp27 , is_num : 0 , is_global : 2 , is_array : 1 , loc : 27 , array_loc : 0
+	OVER
+	is_into_stack : 0 , isleft : 0
+		id : tmp25 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 25 , array_loc : 0
+		id : tmp28 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 28 , array_loc : 0
+	ADD
+	is_into_stack : 0 , isleft : 0
+		id : tmp23 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 23 , array_loc : 0
+		id : tmp29 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 29 , array_loc : 0
+	PUTPARAM     position:2
+	is_into_stack : 0 , isleft : 0
+		id : tmp30 , is_num : 0 , is_global : 2 , is_array : 0 , loc : 30 , array_loc : 0
+	PUTPARAM     position:1
+	is_into_stack : 0 , isleft : 0
+		id : $.LC1 , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	CALL
+	is_into_stack : 0 , isleft : 0
+		id : printf , is_num : 0 , is_global : 0 , is_array : 0 , loc : 0 , array_loc : 0
+	RETURN
+	is_into_stack : 0 , isleft : 0
+		id : NUMBER , is_num : 1 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
+	GOTO 
+	is_into_stack : 0 , isleft : 0
+		id : Lendmain , is_num : 0 , is_global : 1 , is_array : 0 , loc : 0 , array_loc : 0
 Label Lendmain : 
 	is_into_stack : 0 , isleft : 0
 

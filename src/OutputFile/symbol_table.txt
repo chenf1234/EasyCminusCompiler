@@ -2,29 +2,57 @@ Function:
 identifier     scope          size           type           location       linepoc        
 -----------------------------------------------------------------------------------
 
-Function: CallFunction
-a              1              0              int_array      1              4              
-ans            2              4              int            4              6              
-b              1              0              int            2              4              
-j              2              4              int            0              5              
-next           2              4              int            8              7              
-
 Function: GLOBALS
-CallFunction   0              0              void           0              4              
+a              0              48             int_array      0              24             
+as             0              4              int            0              1              
+c              0              4              int            0              31             
+d              0              4              int            0              32             
+fuction        0              0              int            0              4              
 input          0              0              int            0              0              
-main           0              0              int            0              13             
+main           0              0              int            0              34             
+mul            0              0              int            0              14             
 output         0              0              void           0              0              
-vi             0              0              int            0              1              
+ss             0              4              int            0              33             
+v              0              0              int            0              20             
+vi             0              0              int            0              27             
+
+Function: fuction
+a              2              4              int            0              5              
+b              2              4              int            4              6              
+t              1              0              int            1              4              
 
 Function: main
-a              2              12             int_array      0              14             
-b              2              4              int            12             15             
+a              2              492            int_array      0              36             
+               3              4              int            504            57             
+b              2              4              int            492            37             
+               3              4              int            516            60             
+               5              48             int_array      528            87             
+d              2              4              int            496            38             
+i              3              4              int            500            56             
+op             3              8              int_array      520            61             
+s              3              4              int            508            58             
+ss             3              4              int            512            59             
+
+Function: mul
+a              1              0              int            1              14             
+b              1              0              int            2              14             
+c              1              0              int            3              14             
+d              1              0              int_array      4              14             
+
+Function: v
+a              1              0              int_array      1              20             
 
 Function: vi
+a              1              0              int_array      1              27             
+b              1              0              int            2              27             
+c              1              0              int            3              27             
+d              1              0              int            4              27             
 
 function stack size
-Function CallFunction --- stack size: 12
+Function fuction --- stack size: 8
 Function input --- stack size: 0
-Function main --- stack size: 16
+Function main --- stack size: 576
+Function mul --- stack size: 0
 Function output --- stack size: 0
+Function v --- stack size: 0
 Function vi --- stack size: 0
